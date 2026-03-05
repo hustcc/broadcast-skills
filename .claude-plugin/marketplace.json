@@ -1,0 +1,30 @@
+{
+  "name": "broadcast-skills",
+  "owner": {
+    "name": "hustcc"
+  },
+  "metadata": {
+    "description": "Batch send operational messages to IM groups",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "dingtalk-broadcast",
+      "description": "Batch send operational messages to DingTalk groups. Supports text, markdown, link, and actionCard message types.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/dingtalk-broadcast"
+      ]
+    },
+    {
+      "name": "wecom-broadcast",
+      "description": "Batch send operational messages to WeCom (企业微信) groups. Supports text, markdown, and news message types.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/wecom-broadcast"
+      ]
+    }
+  ]
+}
